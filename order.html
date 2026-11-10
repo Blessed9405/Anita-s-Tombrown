@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf5">
+  <meta name="description" content="Place an order for Anita's Tombrown Ghanaian Tom Brown.">
+  <title>Order Tom Brown | Anita's Tombrown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img class="brand-logo" src="images/anitas-tombrown-logo.png" alt=""> <span>Anita's Tombrown</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html#menu">Our menu</a>
+        <a href="index.html#about">Our story</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.1A8.6 8.6 0 0 1 8.9 3.8 8.7 8.7 0 1 0 20.2 15.1Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.5 3.5v4m-2-2h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <a class="button button-small" href="order.html" aria-current="page">Order now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro container">
+      <span class="eyebrow">Fresh Ghanaian goodness</span>
+      <h1>Place your <span>Tom Brown</span> order.</h1>
+      <p>Tell Anita what you'd like. Your order details will open in WhatsApp, ready for you to send.</p>
+    </section>
+
+    <section class="page-layout container">
+      <form class="glass-panel order-form" data-whatsapp-form="order">
+        <h2>Order details</h2>
+        <p class="form-intro">Prices and availability can be confirmed with Anita.</p>
+        <label for="customer-name">Your name</label>
+        <input id="customer-name" name="name" type="text" autocomplete="name" placeholder="e.g. Ama" required>
+
+        <label for="order-size">What would you like?</label>
+        <select id="order-size" name="item" required>
+          <option value="">Choose an option</option>
+          <option value="One Happy Bowl">One Happy Bowl</option>
+          <option value="Family Size">Family Size</option>
+          <option value="I'd like to ask about options">I have a question / special request</option>
+        </select>
+
+        <div class="form-row">
+          <div>
+            <label for="order-quantity">Quantity</label>
+            <input id="order-quantity" name="quantity" type="number" min="1" value="1" required>
+          </div>
+          <div>
+            <label for="fulfillment">Pickup or delivery?</label>
+            <select id="fulfillment" name="fulfillment" required>
+              <option value="">Please choose</option>
+              <option value="Pickup">Pickup</option>
+              <option value="Delivery (please confirm availability)">Delivery (please confirm)</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="order-notes">Anything else? <span class="optional">(optional)</span></label>
+        <textarea id="order-notes" name="notes" rows="3" placeholder="Add a note for Anita"></textarea>
+        <button class="button form-submit" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
+        <p class="form-footnote">Your message won't be sent until you review and send it in WhatsApp.</p>
+      </form>
+
+      <aside class="order-aside">
+        <img src="images/tom-brown-bowl-hq.png" alt="A warm bowl of Ghanaian Tom Brown, ready to enjoy" loading="lazy">
+        <div class="aside-copy">
+          <span class="eyebrow">A Ghanaian favorite</span>
+          <h2>Comfort in every bowl.</h2>
+          <p>Made with care and ready to bring a taste of home to your table.</p>
+          <a class="plain-link" href="contact.html">Questions? Contact Anita <span aria-hidden="true">→</span></a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="images/anitas-tombrown-logo.png" alt=""> <span>Anita's Tombrown</span></a>
+      <p>Ghanaian Tom Brown, made with love.</p>
+      <div class="footer-links"><a href="index.html">Home</a><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+</body>
+</html>
